@@ -21,11 +21,13 @@ body{
 }
 h1{
     font-size: 4rem;
+    color: rebeccapurple ;
 }
 p{
     font-size: 6rem;
     line-height: 1;
     margin: 0 2rem;
+    font-weight: 700;
 }
 .countdown{
     text-align: center;
@@ -33,4 +35,5 @@ p{
 }
 span{
     font-size: 1.5rem;
+    font-weight: 600;
 }

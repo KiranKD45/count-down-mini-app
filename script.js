@@ -9,9 +9,13 @@ function countdown(){
     const newYearDate = new Date(newYear);
     const currentDate = new Date();
 
+    // console.log(newYearDate);
+    // console.log(currentDate);
+
     const totalSeconds =  (newYearDate -currentDate) / 1000;
-    const days = Math.floor(totalSeconds/ 3600 /24);
-    const hours = Math.floor(totalSeconds / 3600) % 24 ;
+    // console.log(totalSeconds);
+    const days = Math.floor(totalSeconds/ (60*60*24));
+    const hours = Math.floor(totalSeconds / (60*60)) % 24 ;
     const minutes = Math.floor(totalSeconds/60)%60;
     const seconds = Math.floor(totalSeconds)% 60;
 
@@ -24,7 +28,7 @@ function countdown(){
         return time < 10 ? `0${time}` :  time;
     }
      
-    console.log(days, hours ,minutes , seconds);
+    // console.log(days, hours ,minutes , seconds);
 
 }
 countdown();
